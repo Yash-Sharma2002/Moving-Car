@@ -1,0 +1,74 @@
+body{
+    background-image: url(background.jpg);
+    overflow: hidden;
+    animation: shakebody linear 4s infinite;
+}
+
+.maincontainer{
+    height: 90vh;
+}
+div.back-image img:first-of-type{
+    margin-top: -15rem;
+}
+#track{
+    margin-top: -106px;
+    width: 800vw;
+    height: 60vh;
+    animation: move linear 11s infinite;
+}
+@keyframes move{
+100%{
+    transform: translateX(-500vw);
+}
+}
+#carbody{
+    height: 5rem;
+    display: block;
+    width: fit-content;
+    margin-left: 15rem;
+    margin-top:-25rem ;
+    transform: rotate(-1deg);
+    animation: updown  linear .8s infinite;
+}
+@keyframes updown{
+    0%,100%{
+        margin-top: -25rem;
+    }
+    50%{
+        margin-top: -25.2rem;
+    }
+}
+ .carwheel1 .leftwheel{
+    height: 2.8rem!important;
+    margin-top: -3rem!important;
+    
+    width: fit-content!important;
+    display: block;
+    margin-left: 26.3rem;
+    animation: mymove .19s linear infinite;
+}
+@keyframes mymove{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ .carwheel2 .rightwheel{
+    height: 2.8rem!important;
+    width: fit-content!important;
+    margin-left: 17.4rem!important;
+    margin-top: -2.7rem!important;
+    display: block;
+    animation: mymove .19s linear infinite;
+}
+@keyframes shakebody
+{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
